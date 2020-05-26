@@ -4,25 +4,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
     <title>Adicionar produto</title>
 </head>
 
 <body>
-    <h1>Adicionar produto!</h1>
-    <form action="#">
-        <label for="nome">Nome</label></br>
-        <input type="text" name="nome" id="nome"></br>
-        <label for="descricao">Descrição</label></br>
-        <textarea name="descricao" id="descricao" cols="30" rows="10"></textarea></br>
-        <label for="preco">Preço</label></br>
-        <input type="number" name="preco" id="preco"></br>
-        <label for="quantidade">Quantidade</label></br>
-        <input type="number" name="quantidade" id="quantidade"></br>
-        <button type="submit">Enviar</button>
-    </form>
-    <div>
-        <a href="index.html">Pagina Inicial</a>
-    </div>
+    <section id="secprdt">
+        <div id="formulario">
+            <h1 id="tl2"><a href="add-prodt.html"><img src="imagens/menu/add.png" alt="Adicionar Produto" class="imgmenu"> </a></h1>
+            <form action="#">
+                <label for="nome">Nome</label></br>
+                <input type="text" name="nome" id="nome"></br>
+                <label for="descricao">Descrição</label></br>
+                <textarea name="descricao" id="descricao" cols="30" rows="10"></textarea></br>
+                <label for="preco">Preço</label></br>
+                <input type="number" name="preco" id="preco"></br>
+                <label for="quantidade">Quantidade</label></br>
+                <input type="number" name="quantidade" id="quantidade"></br>
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+        <div>
+            <a href="index.html"><img src="imagens/menu/home.png" alt="Pagina Inicial" class="imgmenu"> </a>
+        </div>
+    </section>
 </body>
 
 </html>

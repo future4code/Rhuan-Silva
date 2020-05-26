@@ -42,13 +42,63 @@ p{
     box-shadow: 1px 1px 5px black;
 }
 
-=====================
-
+/* -----Formulario---- */
 #formulario{
     display: block;
     text-align: center;
 }
 
+h1#tl2{
+    color: #1D5FC6;
+    font: normal 16px Tahoma;
+    
+}
+
 form{
     text-align: center;
+    font: normal 16px Tahoma;     
+}
+
+#secprdt{
+    margin-top: 16vh;
+    background-color: white;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50vw;
+    height: 70vh;
+    border-radius: 16px;
+    box-shadow: 3px 3px 5px black;
+}
+
+/* ----TABELA----- */
+
+th,td{
+    background-color: white;
+    text-align: center;
+    border-radius: 8px;
+    padding: 16px;
+    border: 2px solid black;
+    font: normal 16px Tahoma;
+}
+
+.imgest{
+    width: 20vw;
+    height: 35vh;
+}
+
+/* -----TIME------ */
+ul#time{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+li{
+    padding: 8px;
+    margin: 2px;
+    border-radius: 8px;
+    border: 2px solid black;
+    font: normal 16px Tahoma;
+    text-align: justify;
 }
