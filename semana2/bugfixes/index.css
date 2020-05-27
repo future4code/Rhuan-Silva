@@ -98,7 +98,8 @@ div:last-child {
 }
 
 table {
-    width: 60%;
+    display: flex;
+    justify-content: center;
 }
 
 td button {
