@@ -27,5 +27,7 @@
     grid-template-columns: 1fr 5fr;
     grid-template-columns: 50px 1fr 1fr 1fr 50px;
     grid-template-columns: 75px 3fr 2fr;
-    
+    grid-template-rows: 0 0 0 0 100%;
+    grid-template: 60%/200px;
+    grid-template: 100% / 20% 80%;
 }
