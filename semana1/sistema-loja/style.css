@@ -1,0 +1,112 @@
+body{
+    background-color: dodgerblue;
+}
+
+#sec{
+    margin-top: 20vh;
+    background-color: white;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50vw;
+    height: 50vh;
+    border-radius: 16px;
+    box-shadow: 3px 3px 5px black;
+}
+
+h1{
+    text-align: center;
+}
+
+.imgmenu{
+    width: 50px;
+    height: 50px;
+    
+}
+ul{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    
+}
+
+p{
+    background-color: white;
+    text-align: center;
+    margin: auto;
+    font: normal 16px Arial;
+    width: 400px;
+    border: 2px solid black;
+    border-radius: 8px;
+    font: normal 16px Tahoma;
+    color: #1D5FC6;
+    box-shadow: 1px 1px 5px black;
+}
+
+/* -----Formulario---- */
+#formulario{
+    display: block;
+    text-align: center;
+}
+
+h1#tl2{
+    color: #1D5FC6;
+    font: normal 16px Tahoma;
+    
+}
+
+form{
+    text-align: center;
+    font: normal 16px Tahoma;     
+}
+
+#secprdt{
+    margin-top: 16vh;
+    background-color: white;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50vw;
+    height: 75vh;
+    border-radius: 16px;
+    box-shadow: 3px 3px 5px black;
+}
+
+button{
+    background-color: #1D5FC6;
+    padding: 8px;
+    margin: 4pt;
+    color: white;
+    border-radius: 8px;
+}
+
+/* ----TABELA----- */
+
+th,td{
+    background-color: white;
+    text-align: center;
+    border-radius: 8px;
+    padding: 16px;
+    border: 2px solid black;
+    font: normal 16px Tahoma;
+}
+
+.imgest{
+    width: 20vw;
+    height: 35vh;
+}
+
+/* -----TIME------ */
+ul#time{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+li{
+    padding: 8px;
+    margin: 2px;
+    border-radius: 8px;
+    border: 2px solid black;
+    font: normal 16px Tahoma;
+    text-align: justify;
+}
