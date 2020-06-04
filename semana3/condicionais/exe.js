@@ -20,3 +20,5 @@
 // EXERCICIO 3
 // Considere um usuário que digita os números 3 e 4 respectivamente. Qual será a mensagem do terminal? Haverá algum erro? Justifique usando os conceitos de bloco ou escopo.
 // Número 1 é menor ou igual ao 2! pois ele vai testar as variaveis e que apresentaram o resultado como 3<4!
+
+//EXERCICIO4
