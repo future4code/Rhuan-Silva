@@ -1,13 +1,15 @@
-let a = []
-let num1 = prompt('Digite um numero!')
-a.push(num1)
-let num2 = prompt('Digite outro numero!')
-a.push(num2)
-let num3 = prompt('Digite outro numero!')
-a.push(num3)
-a.sort()
+let a = [10 , 12 ,8]
+// let num1 = prompt('Digite um numero!')
+// a.push(3)
+// // let num2 = prompt('Digite outro numero!')
+// a.push(12)
+// // let num3 = prompt('Digite outro numero!')
+// a.push(1)
 
-while (a[0] < 2) {
-    document.write(a)
-    i++
+a.sort()
+i=2
+
+while (i > -1) {
+    console.log(a[i])
+    i = i-1
 }
