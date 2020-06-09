@@ -68,4 +68,34 @@
 // Ele pega todos os valores e soma no resultadoA e ao resultadoB ele multiplica rodos os valores e adiciona a variavel depois joga esse valores para o arrayFinal e retorna eles.
 // nome melhor seria somaEmultiplicaTudo.
 
+// EXERCICIO4
+// a. A função deve receber um número correspondente aos "anos humanos" que um cachorro tem e calcular a "idade de cachorro" dele. Considere que 1 ano humano equivale a 7 anos de cachorro:
 
+// let idadeDog = (hum, dog) => {
+//     dog = 7*hum
+//     return dog
+// }
+
+// b.  Escreva uma função que receba 4 parâmetros que correspondem às informações de uma pessoa: o nome (string), a idade (number), o endereço (string) e um boolean que representa se é estudante ou não. Ela deve retornar uma string que unifique todas as informações da pessoa em uma só mensagem com o template:
+
+// let dadosPessoais = (nome, idade, endereco, estudante) =>{
+//     if(estudante == 0){
+//         estudante = 'Sou';
+//     }else if (estudante == 1){
+//         estudante = 'Não sou';
+//     }
+    
+//     idade = Number(idade)
+//     return `Eu sou ${nome},tenho ${idade} anos, moro em ${endereco} e ${estudante}`
+// }
+
+// const frase = dadosPessoais ('Rhuan', 24, 'Rua Turmalina 250', 1)
+// console.log(frase);
+
+EXERCICIO 5
+O propósito desse exercício é que você determine a qual século um ano pertence. Para isso, considere as seguintes afirmações:
+
+1. A sua função só precisa funcionar entre os anos 1000dc até 2020dc (se você quiser, pode implementar para um intervalo maior)
+2. Ela deve retornar uma `string` com a mensagem: `O ano [ANO] pertence ao século [SÉCULO EM ALGARISMOS ROMANOS]`
+    - Algarismos Romanos
+3. As regras de século normalmente confundem, então leiam os exemplos para entender melhor
