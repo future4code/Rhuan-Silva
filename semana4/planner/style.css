@@ -7,36 +7,32 @@
 
 .container{
     display: flex;
-    justify-content: center;
-    align-content: center;
+    justify-content: space-evenly;
+    width: 100%;
 }
 
-table, td, th{
-    border: 2px solid black;
-    border-radius: 8px;
+div{
     
+    width: 10%;
 }
 
-table{
+h1{
+    font-size: 100%;
+}
+
+ul{    
+    width: 16%;
+}
+
+li{
+    width: 100%;
+}
+
+#cabecalho{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 88vw;
-    height: 88vh;
-    background-color: blueviolet;
-}
-
-tr{
-    background-color: white;
-}
-
-th{
-    height: 16vh;
-}
-
-td{
-    width: 16vw;
-    height: 56vh;
-    justify-content: space-evenly;
+    height: 8vh;
+    
 }
 

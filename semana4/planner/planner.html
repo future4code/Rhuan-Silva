@@ -6,31 +6,68 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
-    <title>Document</title>
+    <title>Planner</title>
 </head>
 
 <body>
+    <header id="cabecalho">
+        <label for="tarefa">Nova Tarefa</label>
+        <input type="text" value="" name="dtarefa" id="tarefa">
+        <select name="dias" id="dia">
+            <option value="segunda">Segunda</option>
+            <option value="terca">Terça</option>
+            <option value="quarta">Quarta</option>
+            <option value="quinta">Quinta</option>
+            <option value="sexta">Sexta</option>
+            <option value="sabado">Sabado</option>
+            <option value="domingo">Domingo</option>
+        </select>
+        <button onclick="addTarefa()">Adicionar Tarefa</button>
+    </header>
     <main class="container">
-        <table>            
-            <tr>
-                <th>Segunda</th>
-                <th>Terça</th>
-                <th>Quarta</th>
-                <th>Quinta</th>
-                <th>Sexta</th>
-                <th>Sabado</th>
-                <th>Domingo</th>
-            </tr>
-            <tr>
-                <td id="seg" onclick="addTarefa(seg)"></td>
-                <td id="ter" onclick="addTarefa(ter)"></td>
-                <td id="qua" onclick="addTarefa(qua)"></td>
-                <td id="qui" onclick="addTarefa(qui)"></td>
-                <td id="sex" onclick="addTarefa(sex)"></td>
-                <td id="sab" onclick="addTarefa(sab)"></td>
-                <td id="dom" onclick="addTarefa(dom)"></td>
-            </tr>
-        </table>
+        <div>
+            <h1>Segunda</h1>
+            <ul id="seg">
+
+            </ul>
+        </div>
+        <div>
+            <h1>Terça</h1>
+            <ul id="ter">
+
+            </ul>
+        </div>
+        <div>
+            <h1>Quarta</h1>
+            <ul id="qua">
+
+            </ul>
+        </div>
+        <div>
+            <h1>Quinta</h1>
+            <ul id="qui">
+
+            </ul>
+        </div>
+        <div>
+            <h1>Sexta</h1>
+            <ul id="sex">
+
+            </ul>
+        </div>
+        <div>
+            <h1>Sabado</h1>
+            <ul id="sab">
+
+            </ul>
+        </div>
+        <div>
+            <h1>Domingo</h1>
+            <ul id="dom">
+
+            </ul>
+        </div>
+        
     </main>
 
 </body>
