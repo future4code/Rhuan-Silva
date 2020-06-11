@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Contos alegres da Quarentena</title>
+</head>
+
+<body>
+    <header>
+        <h1>Historias da Quarentena</h1>
+    </header>
+    <main>
+        <section class="container">
+            <form>
+                <label for="titulo">Titulo</label>
+                <input type="text" name="tilt" id="titulo" value="">
+                <label for="autor">Autor</label>
+                <input type="text" name="nome" id="autor" value="">
+                <label for="conteudo">Historia</label>
+                <textarea name="qHist" id="conteudo" cols="30" rows="10" value=''></textarea>
+            </form>
+            <button onclick="postar()">Postar</button>
+    
+    
+        </section>
+        <section id="postagem">
+            <div>
+                <h1 id="tituloPost"></h1>
+                <p id="conteudoPost"></p>
+                <h4 id="autorPost"></h4>    
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>
