@@ -108,3 +108,6 @@
 
 // ola()
 
+//Exercicios de Objetos.
+
+// 1.Um array é como se fosse um estacionamento com varias vagas, e essas vagas são marcadas por indices, que começão do 0 e vão ate onde você precisar. Já uma variavel que contem mais de uma propriedade dentro dela, que podem ser acessadas quando necessario.
