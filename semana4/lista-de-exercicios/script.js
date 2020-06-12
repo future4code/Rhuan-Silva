@@ -18,3 +18,12 @@ Exercícios de interpretação de código
 
 // o console vai imprimir na primeira linha -10
 // o console vai imprimir na segunda linha 1590
+
+Exercícios de Lógica de Programação
+
+// 1. while, for(inicio;condicao;atribuicao), for(let indice of array)
+// for (i = 0; i <= 10; i++){
+//     console.log(i);    
+// }
+
+
