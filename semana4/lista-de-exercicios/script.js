@@ -111,3 +111,22 @@
 //Exercicios de Objetos.
 
 // 1.Um array é como se fosse um estacionamento com varias vagas, e essas vagas são marcadas por indices, que começão do 0 e vão ate onde você precisar. Já uma variavel que contem mais de uma propriedade dentro dela, que podem ser acessadas quando necessario.
+
+// 2.
+
+// let criaRetangulo = (lado1, lado2) => {
+//     let largura = lado1;
+//     let altura = lado2
+//     let perimetro = (2 * (lado1 + lado2));
+//     let area = (lado1 * lado2);
+
+//     return retangulo = {
+//         largura,
+//         altura,
+//         perimetro,
+//         area
+//     }
+// }
+
+3.
+
