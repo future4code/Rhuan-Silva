@@ -53,7 +53,7 @@
 //     }else if (a !== b && a !== c){
 //         triangulo = "Escaleno"
 //     }
-    
+
 //     return triangulo;
 // }
 
@@ -85,11 +85,26 @@
 //     }else{
 //         console.log(`${n2} Não é divisivel por ${n1}`)
 //     }
-    
+
 //     let diferenca = maior - menor;
 //     console.log(`A diferença entre os dois é ${diferenca}`);
-    
+
 
 // }
 
 // const maiorNumero = doisNumeros(25,21)
+
+// Exercicios de funções.
+
+// 1. 
+
+// const numeros = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+
+// 2.
+
+// const ola = () =>{
+//     return alert('Hello Future4')
+// }
+
+// ola()
+
