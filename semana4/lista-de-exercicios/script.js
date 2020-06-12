@@ -7,3 +7,11 @@ Exercícios de interpretação de código
 // o console vai imprimir na primeira linha 165
 // o console vai imprimir na segunda linha nada, vai informar 'TIPO DE INVESTIMENTO INFORMADO INCORRETO!'
 
+// 3. Esta testando quais numeros do array numeros é par e jogando para o array1 e os impares joga para o array2
+// Depois vai exibir no console o tamanho do array inicial e dos outros 2 novos arrays.
+
+// o console vai imprimir na primeira linha 14
+// o console vai imprimir na segunda linha 6
+// o console vai imprimir na terceira linha 8
+
+4. 
