@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <main>
+        <!-- CADASTRO DE DESPESAS -->
+        <section id="cadastro">
+            <h1>Cadastro de despesa</h1>
+            <label for="valor">Valor da despesa</label>
+            <input type="number" name="despesa" id="valor" value="">
+            <label for="tipoDespesa">Tipo(Casa, Alimentação, Outros..)</label>
+            <select name="tipoDesp" id="tipoDespesa">
+                <option value="Casa">Despesa de casa</option>
+                <option value="Alimentacao">Despesa de Alimentação</option>
+                <option value="Outros">Outros</option>
+            </select>
+            <textarea name="descricao" id="descDespesa" value='' cols="30" rows="10"></textarea>
+            <button onclick="cadastrar()">Cadastrar Despesa</button>
+        </section>
+        <!-- FILTRO DE DESPESAS -->
+        <section id="despesasDetalhadas">
+            <h1>Despesas Detalhadas</h1>
+            <label for="tipoDespesa">Tipo(Casa, Alimentação, Outros..)</label>
+            <select name="tipoDesp" id="tipoDespesaD" >
+                <option value="Casa">Despesa de casa</option>
+                <option value="Alimentacao">Despesa de Alimentação</option>
+                <option value="Outros">Outros</option>
+            </select>
+
+            <label for="valorMinimo">Valor Minimo</label>
+            <input type="number" name="valMin" id="valorMinimo">
+            <label for="valorMaximo">Valor Maximo</label>
+            <input type="number" name="valMax" id="valorMaximo">
+            
+            <section>
+                <ul id="listaDespesa">
+
+                </ul>
+            </section>
+            <button onclick="filtrar()">Filtrar</button>
+            <button onclick="limpaFiltro()">Limpar Filtros</button>
+        </section>
+        <!-- EXTRATO -->
+        <section>
+            <h1>Extrato</h1>
+            <h2 >Valor Total</h2>
+            <ul id="valorTotal">
+
+            </ul>
+        </section>
+    </main>
+
+</body>
+
+</html>
