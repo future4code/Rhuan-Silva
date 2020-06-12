@@ -59,3 +59,37 @@
 
 // const trianguloTipo = tamanhoLados(4,5,2);
 // console.log(trianguloTipo);
+
+// 5.
+// let maior;
+// let menor;
+// const doisNumeros = (n1,n2) =>{
+//     if (n1>n2){
+//         maior=n1
+//         menor=n2
+//     }else{
+//         maior=n2
+//         menor=n1
+//     }
+
+//     console.log(`O maior é ${maior}`);
+
+//     if(n1%n2===0){
+//         console.log(`${n1} é divisivel por ${n2}`);
+//     }else{
+//         console.log(`${n1} Não é divisivel por ${n2}`)
+//     }
+
+//     if(n2%n1===0){
+//         console.log(`${n2} é divisivel por ${n1}`);
+//     }else{
+//         console.log(`${n2} Não é divisivel por ${n1}`)
+//     }
+    
+//     let diferenca = maior - menor;
+//     console.log(`A diferença entre os dois é ${diferenca}`);
+    
+
+// }
+
+// const maiorNumero = doisNumeros(25,21)
