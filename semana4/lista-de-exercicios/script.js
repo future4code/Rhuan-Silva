@@ -128,5 +128,15 @@
 //     }
 // }
 
-3.
+// 3.
 
+// const filme = {
+//     nome: 'Aladdin ',
+//     ano: 2019,
+//     diretor:'Guy Ritchie',
+//     atores: ['Mena Massoud','Naomi Scott','Will Smith']
+// }
+
+// console.log(`Venha assistir ao filme ${filme.nome}, de ${filme.ano}, dirigido por ${filme.diretor} e estrelado por ${filme.atores}`);
+
+4.
