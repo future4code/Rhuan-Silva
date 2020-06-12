@@ -14,4 +14,7 @@ Exercícios de interpretação de código
 // o console vai imprimir na segunda linha 6
 // o console vai imprimir na terceira linha 8
 
-4. 
+// 4. O código está testando qual é o menor e qual o maior numero do array e salvando dentro das variaveis respectivamente. 
+
+// o console vai imprimir na primeira linha -10
+// o console vai imprimir na segunda linha 1590
