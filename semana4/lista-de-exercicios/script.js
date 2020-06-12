@@ -26,4 +26,10 @@ Exercícios de Lógica de Programação
 //     console.log(i);    
 // }
 
+// 2. 
+// a) false
+// b) true 
+// c) true
+// d) true
+// e) false  
 
