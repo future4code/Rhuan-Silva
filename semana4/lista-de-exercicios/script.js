@@ -41,3 +41,21 @@
 //         console.log(i)
 //     }
 // }
+
+// 4.
+
+// const tamanhoLados = (a, b, c) => {
+//     let triangulo;
+//     if (a === b && a === c){
+//         triangulo = "Equilatero"
+//     }else if(a === b || a === c){
+//         triangulo = "Isósceles"
+//     }else if (a !== b && a !== c){
+//         triangulo = "Escaleno"
+//     }
+    
+//     return triangulo;
+// }
+
+// const trianguloTipo = tamanhoLados(4,5,2);
+// console.log(trianguloTipo);
