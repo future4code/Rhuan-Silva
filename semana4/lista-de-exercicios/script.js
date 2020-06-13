@@ -171,18 +171,18 @@
 //     return hum.idade>=20
 // })
 
-// console.log(maiores);
+
 
 // b) 
 // const menores = arrayBase.filter((hum,i,a)=>{
 //         return hum.idade<20
 //     })
     
-//     console.log(menores);
+
 
 // 2.
 
-const array = [1, 2, 3, 4, 5, 6]
+// const array = [1, 2, 3, 4, 5, 6]
 
 // // a)
 
@@ -190,4 +190,20 @@ const array = [1, 2, 3, 4, 5, 6]
 //     a[i] = n*2
 // })
 
-// console.log(array);
+// b)
+// array.forEach((n,i,a)=>{
+//     a[i] = n*3
+//     a[i].toString
+// })
+
+// c)
+// array.forEach ((numero,item,arr)=>{
+//     if(numero%2===0){
+//         arr[item] = `${numero} é par!`
+//     }else{
+//         arr[item] = `${numero} é impar!`
+//     }
+// })
+
+
+
