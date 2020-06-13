@@ -157,3 +157,37 @@
 
 // anonimizarPessoas()
 
+// Exercicios Array
+
+
+// 1.// arrayBase = [
+// 	{ nome: "Pedro", idade: 20 },
+// 	{ nome: "João", idade: 10 },
+// 	{ nome: "Paula", idade: 12 },
+// 	{ nome: "Artur", idade: 89 } 
+// ]
+
+// a)const maiores = arrayBase.filter((hum,i,a)=>{
+//     return hum.idade>=20
+// })
+
+// console.log(maiores);
+
+// b) 
+// const menores = arrayBase.filter((hum,i,a)=>{
+//         return hum.idade<20
+//     })
+    
+//     console.log(menores);
+
+// 2.
+
+const array = [1, 2, 3, 4, 5, 6]
+
+// // a)
+
+// array.forEach((n,i,a)=>{
+//     a[i] = n*2
+// })
+
+// console.log(array);
