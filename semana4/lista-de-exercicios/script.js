@@ -140,20 +140,20 @@
 // console.log(`Venha assistir ao filme ${filme.nome}, de ${filme.ano}, dirigido por ${filme.diretor} e estrelado por ${filme.atores}`);
 
 // 4.
-const pessoa = {
-    nome: 'Rhuan',
-    idade: 24,
-    email: 'rhuancarlos.silva12@gmail.com',
-    endereco: 'Turmalina,250'
-}
+// const pessoa = {
+//     nome: 'Rhuan',
+//     idade: 24,
+//     email: 'rhuancarlos.silva12@gmail.com',
+//     endereco: 'Turmalina,250'
+// }
 
-const anonimizarPessoas = (anonimo) =>{
-    const anonimo = {
-        ...pessoa,
-        nome: 'ANONIMO',
-    }
-    return 
-}
+// function anonimizarPessoas() {
+//     const anonimo = {
+//         ...pessoa,
+//         nome: 'ANONIMO',   
+//     }
+//     console.log(anonimo);
+// }
 
-anonimizarPessoas(pessoa)
-console.log(pessoa);
+// anonimizarPessoas()
+
