@@ -177,7 +177,7 @@
 // const menores = arrayBase.filter((hum,i,a)=>{
 //         return hum.idade<20
 //     })
-    
+
 
 
 // 2.
@@ -225,3 +225,43 @@
 // // const naoPermitidos = pessoas.filter((pess,item,arr)=>{
 // //     return pess.altura < 1.5 || pess.idade < 14 || pess.idade > 60
 // // })
+
+// 4. 
+// const consultas = [
+// 	{ nome: "João", genero: "masculino", cancelada: true, dataDaConsulta: "01/10/2019" },
+// 	{ nome: "Pedro", genero: "masculino", cancelada: false, dataDaConsulta: "02/10/2019" },
+// 	{ nome: "Paula", genero: "feminino", cancelada: true, dataDaConsulta: "03/11/2019" },
+// 	{ nome: "Márcia", genero: "feminino", cancelada: false, dataDaConsulta: "04/11/2019" }
+// ]
+
+// const naoCaneladosSr = consultas.filter((pessoa,i,a) => {
+// 		return pessoa.cancelada == false && pessoa.genero === 'masculino'
+// })
+
+// console.log(`Olá, Sr ${naoCaneladosSr[0].nome}. Estamos enviando esta mensagem para
+// lembrá-lo da sua consulta no dia ${naoCaneladosSr[0].dataDaConsulta }.Por favor, acuse
+// o recebimento deste e - mail.`);
+
+// const naoCaneladosSra = consultas.filter((pessoa,i,a) => {
+// 		return pessoa.cancelada == false && pessoa.genero === 'feminino'
+// })
+
+// console.log(`Olá, Sra ${naoCaneladosSra[0].nome}. Estamos enviando esta mensagem para
+// lembrá-la da sua consulta no dia ${naoCaneladosSra[0].dataDaConsulta }.Por favor, acuse
+// o recebimento deste e - mail.`);
+
+// const CaneladosSra = consultas.filter((pessoa,i,a) => {
+// 		return pessoa.cancelada == true && pessoa.genero === 'feminino'
+// })
+
+// console.log(`Olá, Sra ${CaneladosSra[0].nome}. Infelizmente, sua consulta marcada
+// para o dia ${CaneladosSra[0].dataDaConsulta } foi cancelada.Se quiser, pode entrar em 
+// contato conosco para remarcá-la`);
+
+// const CaneladosSr = consultas.filter((pessoa,i,a) => {
+// 		return pessoa.cancelada == true && pessoa.genero === 'masculino'
+// })
+
+// console.log(`Olá, Sr ${CaneladosSr[0].nome}. Infelizmente, sua consulta marcada
+// para o dia ${CaneladosSr[0].dataDaConsulta } foi cancelada.Se quiser, pode entrar em 
+// contato conosco para remarcá-la`);
