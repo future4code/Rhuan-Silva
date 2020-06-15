@@ -100,6 +100,17 @@
 
 // const numeros = [1, 2, 3, 4, 5, 6, 7, 8, 9]
 
+// const segundosMaiores = () =>{
+// 	numeros.sort() 
+// 	let segundoMaior= numeros[1]
+// 	let segundoMenor = numeros.length-1
+// 	console.log(segundoMaior);
+// 	console.log(segundoMenor);
+	
+// }
+
+// segundosMaiores()
+
 // 2.
 
 // const ola = () =>{
@@ -268,16 +279,16 @@
 
 // 5.
 
-const contas = [
-	{ cliente: "João", saldoTotal: 1000, compras: [100, 200, 300] },
-	{ cliente: "Paula", saldoTotal: 7500, compras: [200, 1040] },
-	{ cliente: "Pedro", saldoTotal: 10000, compras: [5140, 6100, 100, 2000] },
-	{ cliente: "Luciano", saldoTotal: 100, compras: [100, 200, 1700] },
-	{ cliente: "Artur", saldoTotal: 1800, compras: [200, 300] },
-	{ cliente: "Soter", saldoTotal: 1200, compras: [] }
-]
+// const contas = [
+// 	{ cliente: "João", saldoTotal: 1000, compras: [100, 200, 300] },
+// 	{ cliente: "Paula", saldoTotal: 7500, compras: [200, 1040] },
+// 	{ cliente: "Pedro", saldoTotal: 10000, compras: [5140, 6100, 100, 2000] },
+// 	{ cliente: "Luciano", saldoTotal: 100, compras: [100, 200, 1700] },
+// 	{ cliente: "Artur", saldoTotal: 1800, compras: [200, 300] },
+// 	{ cliente: "Soter", saldoTotal: 1200, compras: [] }
+// ]
 
-contas.forEach((pessoa,i,arr)=>{
-	let compraTotal = pessoa.compras.reduce((compraTotal, compras) => compraTotal + compras, 0) 
-	pessoa.saldoTotal = pessoa.saldoTotal - compraTotal
-})
+// contas.forEach((pessoa,i,arr)=>{
+// 	let compraTotal = pessoa.compras.reduce((compraTotal, compras) => compraTotal + compras, 0) 
+// 	pessoa.saldoTotal = pessoa.saldoTotal - compraTotal
+// })
