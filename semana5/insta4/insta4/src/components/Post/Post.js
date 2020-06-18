@@ -1,12 +1,12 @@
 import React from 'react'
 import './Post.css'
 
-import {IconeComContador} from '../IconeComContador/IconeComContador'
+import { IconeComContador } from '../IconeComContador/IconeComContador'
 
 import iconeCoracaoBranco from '../../img/favorite-white.svg'
 import iconeCoracaoPreto from '../../img/favorite.svg'
 import iconeComentario from '../../img/comment_icon.svg'
-import {SecaoComentario} from '../SecaoComentario/SecaoComentario'
+import { SecaoComentario } from '../SecaoComentario/SecaoComentario'
 
 class Post extends React.Component {
   state = {
@@ -17,13 +17,19 @@ class Post extends React.Component {
   }
 
   onClickCurtida = () => {
-    console.log('Curtiu!')
+    this.setState({
+      curtido: !this.state.curtido,
+    })
+    if (this.state.curtido === false) {
+      this.setState({ numeroCurtidas: this.state.numeroCurtidas + 1 })
+    } else {
+      this.setState({ numeroCurtidas: this.state.numeroCurtidas - 1 })
+    }
   }
 
   onClickComentario = () => {
     this.setState({
-      comentando: !this.state.comentando
-    })
+      comentando: !this.state.comentando})
   }
 
   aoEnviarComentario = () => {
@@ -36,25 +42,26 @@ class Post extends React.Component {
   render() {
     let iconeCurtida
 
-    if(this.state.curtido) {
+    if (this.state.curtido === true) {
       iconeCurtida = iconeCoracaoPreto
     } else {
       iconeCurtida = iconeCoracaoBranco
+
     }
 
     let componenteComentario
 
-    if(this.state.comentando) {
-      componenteComentario = <SecaoComentario aoEnviar={this.aoEnviarComentario}/>
+    if (this.state.comentando) {
+      componenteComentario = <SecaoComentario aoEnviar={this.aoEnviarComentario} />
     }
 
     return <div className={'post-container'}>
       <div className={'post-header'}>
-        <img className={'user-photo'} src={this.props.fotoUsuario} alt={'Imagem do usuario'}/>
+        <img className={'user-photo'} src={this.props.fotoUsuario} alt={'Imagem do usuario'} />
         <p>{this.props.nomeUsuario}</p>
       </div>
 
-      <img className={'post-photo'} src={this.props.fotoPost} alt={'Imagem do post'}/>
+      <img className={'post-photo'} src={this.props.fotoPost} alt={'Imagem do post'} />
 
       <div className={'post-footer'}>
         <IconeComContador
