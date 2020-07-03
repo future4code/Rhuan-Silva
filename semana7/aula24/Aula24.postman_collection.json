@@ -1,0 +1,52 @@
+{
+	"info": {
+		"_postman_id": "2c0ec459-86f3-4061-afac-526ce82a0e68",
+		"name": "Aula24",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "aula24",
+			"item": [
+				{
+					"name": "https://us-central1-labenu-apis.cloudfunctions.net/labefy/playlists/:playlistId/tracks\n",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Rhuan-Carlos-Turing",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://us-central1-labenu-apis.cloudfunctions.net/labefy/playlists/:playlistId/tracks\n",
+							"protocol": "https",
+							"host": [
+								"us-central1-labenu-apis",
+								"cloudfunctions",
+								"net"
+							],
+							"path": [
+								"labefy",
+								"playlists",
+								":playlistId",
+								"tracks\n"
+							],
+							"variable": [
+								{
+									"key": "playlistId",
+									"value": "410009e7-04f7-4d13-bf65-756b150337e2"
+								}
+							]
+						},
+						"description": "aula24"
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		}
+	],
+	"protocolProfileBehavior": {}
+}
