@@ -10,17 +10,18 @@ const Container = styled.div`
 export class App extends React.Component {
   state = {
     pokeList: [],
-    pokeImage: []
+    pokeImage: ""
   };
 
   componentDidMount = () => {
-    this.pegaPokemons();
-  };
+    this.pegaPokemons();}
+  //   this.onChangePokeName();
+  // };
 
   pegaPokemons = async () => {
     try {
       const response = await axios.get(
-        "https://pokeapi.co/api/v2/pokemon/?limit=900"
+        "https://pokeapi.co/api/v2/pokemon/?limit=151"
       );
 
       this.setState({ pokeList: response.data.results });
@@ -29,10 +30,11 @@ export class App extends React.Component {
     }
   };
 
-  listPokemon = () => {
-    // const pokeName = event.target.value;
+  onChangePokeName = () => {
+    
 
-    axios.get('https://pokeapi.co/api/v2/pokemon/?limit=900')
+    axios
+      .get(`https://pokeapi.co/api/v2/pokemon/`)
       .then(response => {
         this.setState({ pokeImage: response.data.sprites.front_default });
       })
@@ -42,7 +44,11 @@ export class App extends React.Component {
   };
 
   render() {
+    const teste = this.state.pokeList.map((pokemon)=>{
+      return pokemon.name
+    });
     return (
+      
       <Container>
         {/* <select onChange={this.onChangePokeName}>
           <option value={""} />
@@ -54,19 +60,13 @@ export class App extends React.Component {
               </option>
             );
           })}
-        </select>
+        </select> */}
+        {teste.join(',')}
         <div>
           {this.state.pokeImage && (
             <img src={this.state.pokeImage} alt="Pokemon" />
           )}
-        </div> */}
-        <span>
-          {this.state.pokeImage.map(pokemon => {
-            return (
-              <img src={this.state.pokeImage} alt='pokemon' />
-            )
-          })}
-        </span>
+        </div>
       </Container>
     );
   }
