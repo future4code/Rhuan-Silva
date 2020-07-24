@@ -7,12 +7,12 @@ import { Switch, Route, BrowserRouter } from "react-router-dom";
 import HomePage from "./components/HomePage";
 import AboutPage from "./components/User/AboutPage";
 import ApplicationFormPage from "./components/User/ApplicationFormPage";
-import CreateTripPage from "./components/Admin/Router/CreateTripPage";
+import CreateTripPage from "./components/Admin/CreateTripPage";
 import ListTripsPage from "./components/User/ListTripsPage";
 import LoginPage from "./components/LoginPage";
-import Router from "./components/Router";
+import Router from "./components/Admin/Router";
 import SubscribePage from "./components/User/SubscribePage";
-import TripDetailsPage from "./components/Admin/Router/TripDetailsPage";
+import TripDetailsPage from "./components/Admin/TripDetailsPage";
 
 const App = () => {
   return (
@@ -21,28 +21,28 @@ const App = () => {
         <Route exact path="/">
           <HomePage />
         </Route>
-        <Route exact path="/ApplicationFormPage">
+        <Route exact path="/subscribe-form">
           <ApplicationFormPage />
         </Route>
-        <Route exact path="/CreateTripPage">
+        <Route exact path="/create-trip">
           <CreateTripPage />
         </Route>
-        <Route exact path="/ListTripsPage">
+        <Route exact path="/list-trips">
           <ListTripsPage />
         </Route>
-        <Route exact path="/LoginPage">
+        <Route exact path="/login-page">
           <LoginPage />
         </Route>
-        <Route exact path="/Router">
+        <Route exact path="/router">
           <Router />
         </Route>
-        <Route exact path="/SubscribePage">
+        <Route exact path="/subscribe-page">
           <SubscribePage />
         </Route>
-        <Route exact path="/sobre/:linguagem">
+        <Route exact path="/about/:linguagem">
           <AboutPage />
         </Route>
-        <Route exact path="/TripDetailsPage">
+        <Route exact path="/trip-detail-page">
           <TripDetailsPage />
         </Route>
         <Route path="/">

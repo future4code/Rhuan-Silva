@@ -12,7 +12,7 @@ const SubscribePage = () => {
   return (
     <div>
       <p>Inscreva-se</p>
-      <p>FORMULARIO AQUI</p>
+      <p>TERMOS DE USO</p>
       <button onClick={goToApplicationFormPage}>Formulario</button>
     </div>
   );

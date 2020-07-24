@@ -1,27 +1,48 @@
 import React from "react";
-import {useHistory} from "react-router-dom"
+import { useState, useEffect } from "react";
+import { useHistory } from "react-router-dom";
+import axios from "axios";
+import BaseUrl from "../BaseUrl";
+
+// const baseUrl =
+//   "https://us-central1-labenu-apis.cloudfunctions.net/labeX/Rhuan-Turing";
 
 const LoginPage = () => {
-  const history = useHistory();
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const history = useHistory(); 
 
-  const goToAboutPage = () => {
-    history.push("/sobre/portugues");
+  const onChangeEmail = (event) => {
+    setEmail(event.target.value);
   };
-  const goToSubscribePage = () => {
-    history.push("/SubscribePage");
+  const onChangePassword = (event) => {
+    setPassword(event.target.value);
   };
-  const goToListTripsPage = () => {
-    history.push("/ListTripsPage");
+
+  const handleLogin = () => {
+    const body = {
+      email: email,
+      password: password,
+    };
+
+    axios
+      .post(`${BaseUrl}/login`, body)
+      .then((response) => {
+        window.localStorage.setItem("token", response.data.token);
+        history.push('/router')
+        console.log(response);
+      })
+      .catch((error) => {
+        alert(error.message);
+      });
   };
 
   return (
     <div>
-      <p>Home</p>
-      <button onClick={goToAboutPage}>Ir para página de sobre</button>
-      <button onClick={goToListTripsPage}>
-        Ir para página de Lista de Viagens
-      </button>
-      <button onClick={goToSubscribePage}>Ir para página de Inscrição</button>
+      <h1>Login Page</h1>
+      <input value={email} onChange={onChangeEmail} />
+      <input value={password} onChange={onChangePassword} />
+      <button onClick={handleLogin}>Fazer Login</button>
     </div>
   );
 };

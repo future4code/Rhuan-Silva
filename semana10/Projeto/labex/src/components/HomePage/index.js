@@ -5,13 +5,16 @@ const HomePage = () => {
   const history = useHistory();
 
   const goToAboutPage = () => {
-    history.push("/sobre/portugues");
+    history.push("/about/portugues");
   };
   const goToSubscribePage = () => {
-    history.push("/SubscribePage");
+    history.push("/subscribe-page");
+  };
+  const goToLoginPage = () => {
+    history.push("/login-page");
   };
   const goToListTripsPage = () => {
-    history.push("/ListTripsPage");
+    history.push("/list-trips");
   };
 
   return (
@@ -20,6 +23,7 @@ const HomePage = () => {
       <button onClick={goToAboutPage}>Ir para página de sobre</button>
       <button onClick={goToListTripsPage}>Ir para página de Lista de Viagens</button>
       <button onClick={goToSubscribePage}>Ir para página de Inscrição</button>
+      <button onClick={goToLoginPage}>Ir para login</button>
     </div>
   );
 };
